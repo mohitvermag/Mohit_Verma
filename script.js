@@ -46,6 +46,7 @@ $(document).ready(function(){
 
         }
     });
+    
     // Typing animation
     var typed = new Typed(".typing" ,{
         strings:["Web Designer","Web Developer","Python Developer","Front-end Developer"],
