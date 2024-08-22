@@ -63,30 +63,28 @@ $(document).ready(function(){
 
 // Sending email from javascript
 
-// const form = document.querySelector("form");
-// const fullName = document.getElementById("name");
-// const email = document.getElementById("email");
-// const subject = document.getElementById("subject");
-// const message = document.getElementById("message");
-// function sendemail(){
-//     const bodyMessage = "Full Name" + fullname + "<br/>" + 
-//     "Email" + email + "<br/>" + 
-//     "Subject" + subject + "<br/>" 
-//     + "Message" + message + "<br/>"
-//     Email.send({
-//         Host : "smtp.elasticemail.com",
-//         Username : "mohitvermag75@gmail.com",
-//         Password : "9BFE37AF150E9D61B36AD7B7A812C237A96C",
-//         To : 'mohitvermag75@gmail.com',
-//         From : "mohitvermag75@gmail.com",
-//         Subject : subject.value,
-//         Body : bodyMessage
-//     }).then(
-//       message => alert(message)
-//     );
-// }
-// form.addEventListener("submit", (e) => {
-//     e.preventDefault();
+const form = document.querySelector("form");
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const mobile = document.getElementById("mobile");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+function sendemail(){
+    const bodyMessage = `Full Name : ${fullName.value} <br> Email : ${email.value} <br> Mobile : ${mobile.value} <br> Subject : ${subject.value} <br> Message : ${message.value}`;
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "mohitvermag75@gmail.com",
+        Password : "9BFE37AF150E9D61B36AD7B7A812C237A96C",
+        To : 'mohitvermag75@gmail.com',
+        From : "mohitvermag75@gmail.com",
+        Subject : `${fullName.value} Data From Portfolio"`,
+        Body : bodyMessage
+    }).then(
+      message => alert(message)
+    );
+}
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-//     sendemail();
-// });
+    sendemail();
+});
