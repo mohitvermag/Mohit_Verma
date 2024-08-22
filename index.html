@@ -56,7 +56,7 @@
                <div class="column left"><img src="images/img8.jpg" alt=""></div>
             <div class="column right">
                 <div class="text">I'm Mohit and I'm a Aspiring <span class="typing-2">Web Developer</span></div>
-                <p>I'm a passionate web developer with a strong foundation in creating Dynamic, Responsive, and user-friendly websites. With a deep understanding of both front-end and back-end technologies, I enjoy turning complex problems into elegant digital solutions. I specialize in<span class="skill_name"> HTML, CSS, JavaScript, jQuery, Bootstrap</span> and modern frameworks like <span class="skill_name">React JS</span>, while also having good knowledge in server-side development with <span class="skill_name">Python and MySQL</span>. I am also learning <span class="skill_name">Python Full Stack Development</span> from DUCAT, Noida.
+                <p>I'm a passionate web developer with a strong foundation in creating dynamic, responsive, and user-friendly websites. With a deep understanding of both front-end and back-end technologies, I enjoy turning complex problems into elegant digital solutions. I specialize in<span class="skill_name"> HTML, CSS, JavaScript, jQuery, Bootstrap</span> and modern frameworks like <span class="skill_name">React JS</span>, while also having good knowledge in server-side development with <span class="skill_name">Python and MySQL</span>. I am also learning <span class="skill_name">Python Full Stack Development</span> from DUCAT, Noida.
 
                     My approach to web development is centered around delivering clean, efficient code that aligns with best practices. I'm always eager to learn new technologies and stay updated with the latest trends in the industry to ensure my work remains innovative and effective.</p>
            <a href="Resume.pdf" target="_blank">Download CV</a>
@@ -233,17 +233,20 @@
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input id="name" class="form-data" type="text" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="text" placeholder="Email" required>
+                                <input id="email" class="form-data" type="text" placeholder="Email" required>
                             </div>
                         </div>
+                        <div class="field">
+                            <input id="mobile" class="form-data" type="number" placeholder="Mobile">
+                        </div>
                             <div class="field">
-                                <input type="text" placeholder="Subject" required>
+                                <input id="subject" class="form-data" type="text" placeholder="Subject" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Type your Message Here..." required></textarea>
+                                <textarea id="message" class="form-data" cols="30" rows="10" placeholder="Type your Message Here..." required></textarea>
                             </div>
                             <div class="button">
                                 <button type="submit">Send Message</button>
@@ -253,6 +256,8 @@
             </div>
         </div>
        </section>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
