@@ -48,13 +48,13 @@ $(document).ready(function(){
     });
     // Typing animation
     var typed = new Typed(".typing" ,{
-        strings:["Web Designer","Web Developer","Python Developer","Front-end Developer"],
+        strings:["Web Designer","Web Developer","Python Developer","Front-end Developer","PHP Developer"],
         typeSpeed:100,
         backSpeed:60,
         loop:true
     })
     var typed = new Typed(".typing-2" ,{
-        strings:["Web Designer","Web Developer","Python Developer","Front-end Developer"],
+        strings:["Web Designer","Web Developer","Python Developer","Front-end Developer","PHP Developer"],
         typeSpeed:100,
         backSpeed:60,
         loop:true
