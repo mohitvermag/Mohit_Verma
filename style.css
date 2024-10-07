@@ -360,6 +360,9 @@ margin-bottom: 10px;
 .skills .skills-content .right .reactjs::before{
     width:70%;
 }
+.skills .skills-content .right .PHP::before{
+    width:75%;
+}
 .skills .skills-content .right .jQuery::before{
     width:80%;
 }
