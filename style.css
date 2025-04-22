@@ -346,7 +346,7 @@ margin-bottom: 10px;
     width:90%;
 }
 .skills .skills-content .right .css::before{
-    width:70%;
+    width:90%;
 }
 .skills .skills-content .right .javascript::before{
     width:80%;
@@ -355,16 +355,19 @@ margin-bottom: 10px;
     width:85%;
 }
 .skills .skills-content .right .MySQL::before{
-    width:60%;
+    width:80%;
 }
 .skills .skills-content .right .reactjs::before{
-    width:70%;
+    width:75%;
 }
 .skills .skills-content .right .PHP::before{
     width:75%;
 }
-.skills .skills-content .right .jQuery::before{
+.skills .skills-content .right .Node::before{
     width:80%;
+}
+.skills .skills-content .right .Express::before{
+    width:75%;
 }
 
 /* Project Styling */
